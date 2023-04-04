@@ -4,34 +4,56 @@
       <div class="container">
         <div class="d-flex justify-content-between">
           <img src="~/assets/img/logo-sem-fundo.png" class="logo-img" alt="olivstudio">
-          <VueSlickCarousel v-bind="slickOptions" class="teste2">
-          <div>          
-            <img src="~/assets/img/clientes/fernandanasses.png" class="test" alt="">
+          <div class="carossel">
+            <span>Ultimos clientes:</span>
+            <VueSlickCarousel v-bind="slickOptions">
+              <div>
+                <img src="~/assets/img/clientes/fernandanasses.png" class="carossel-img" alt="">
+              </div>
+              <div>
+                <img src="~/assets/img/clientes/jmenezes.png" class="carossel-img" alt="">
+              </div>
+              <div>
+                <img src="~/assets/img/clientes/yume.png" class="carossel-img" alt="">
+              </div>
+            </VueSlickCarousel>
           </div>
-          <div>          
-            <img src="~/assets/img/clientes/jmenezes.png" class="test" alt="">
-          </div>
-          <div>          
-            <img src="~/assets/img/clientes/yume.png" class="test" alt="">
-          </div>
-        </VueSlickCarousel>
         </div>
-          <h1>Crie uma nova cara para sua marca</h1>
-          <div class="w-100 d-flex justify-content-center">
+        <h1>Crie uma nova cara para sua marca</h1>
+        <div class="w-100 d-flex justify-content-center">
           <b-button class="btn button-contratar mt-5" @click="redirectContrate()">
             Saiba como
           </b-button>
-          </div>
+        </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container ">
+      <div class="text-center">
+        <p style="font-size: 40px;">
+          Por que você precisa de mim?
+        </p>
+        <p>
+          Bom eu tenho otimas qualidades
+        </p>
+        <p>
+          Bom eu tenho otimas qualidades
+        </p>
+        <p>
+          Bom eu tenho otimas qualidades
+        </p>
+      </div>
+
+      <div class="mt-4">
+        <h5>AWDAWDAW</h5>
+        <span>Opinião dos clientes:</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
-  import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 
 export default {
   name: 'IndexPage',
@@ -58,20 +80,24 @@ export default {
 </script>
 
 <style scoped>
-.teste2 {
-  height: 150px;
+.carossel {
+  height: 280px;
   width: 50%;
 }
-.test {
+
+.carossel-img {
   height: 250px;
+  width: 250px;
+  object-fit: cover;
 }
+
 .home-top-background {
   background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-image: url(~/assets/img/background.jpg);
-    height: 550px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-image: url(~/assets/img/background.jpg);
+  height: 550px;
 }
 
 .logo-img {
