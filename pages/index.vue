@@ -1,16 +1,16 @@
 <template>
   <div>
     <div class="home-top-background bg-fran d-flex align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-          <img src="~/assets/img/logo-sem-fundo.png" class="logo-img" alt="olivstudio">
-    </div>
+      <div class="d-flex justify-content-center">
+        <img src="~/assets/img/logo-sem-fundo.png" class="logo-img" alt="olivstudio">
+      </div>
     </div>
     <div class="row m-0" id="sobre">
       <div class="col-lg-8 col-md-12 col-12 d-flex flex-column align-items-center justify-content-center">
         <h1 class="page-title">
-        Oi!<br>
-        Meu nome é Fran.<br>
-        Sou fundadora e designer no Oliv.
+          Oi!<br>
+          Meu nome é Fran.<br>
+          Sou fundadora e designer no Oliv.
         </h1>
 
         <h3 class="about-me mt-3">
@@ -40,7 +40,7 @@
         <span class="services-subtitle">
           Entenda um pouco sobre meus desenvolvimentos de
         </span>
-        <div class="d-flex justify-content-between mt-3 white-list">
+        <div class="mt-3 white-list">
           <ul>
             <li>Identidade visual</li>
             <li>Criação de estampa</li>
@@ -48,18 +48,18 @@
             <li>Projetos especiais</li>
           </ul>
 
-          <div class="d-flex align-items-center">
-          <b-button class="btn button-servicos" @click="redirectServicos()">
-          Veja mais
-          </b-button>
-        </div>
+          <div class="d-flex justify-content-center">
+            <b-button class="btn button-servicos" @click="redirectServicos()">
+              Veja mais
+            </b-button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="mt-3 d-flex align-content-center align-items-center justify-content-center"> 
+    <div class="mt-3 d-flex align-content-center align-items-center justify-content-center">
       <div class="carossel">
-      <h1 class="text-center" style="color: rgb(185, 121, 214);">Ultimos projetos realizados:</h1>
+        <h1 class="text-center" style="color: rgb(185, 121, 214);">Ultimos projetos realizados:</h1>
 
         <VueSlickCarousel v-bind="slickOptions">
           <div>
@@ -77,7 +77,7 @@
           <div>
             <img src="~/assets/img/projetos/yandara.png" class="carossel-img" alt="">
           </div>
-        </VueSlickCarousel> 
+        </VueSlickCarousel>
       </div>
     </div>
   </div>
@@ -131,12 +131,13 @@ export default {
   font-weight: 300;
   font-size: 25px;
 }
+
 .carossel {
   height: 550px;
   width: 100%;
 }
 
- .carossel-img {
+.carossel-img {
   height: 500px;
   width: 500px;
   object-fit: cover;
@@ -156,8 +157,8 @@ export default {
 
 
 .button-servicos {
-  height: 100px;
-  width: 250px;
+  height: 85px;
+  width: 300px;
   background-color: transparent;
   color: white;
   border-color: white;
@@ -176,30 +177,30 @@ export default {
 }
 
 .white-list ul li {
-color: white;
-font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 
 @media (max-width :767px) {
   .services-title {
-  font-size: 35px;
-}
+    font-size: 35px;
+  }
 
-.services-subtitle {
-  font-size: 20px;
-}
+  .services-subtitle {
+    font-size: 20px;
+  }
 
-.white-list ul li {
-font-size: 20px;
-}
+  .white-list ul li {
+    font-size: 20px;
+  }
 
-.button-servicos {
-  height: 50px;
-  width: 150px;
-  font-size: 15px;
-}
+  .button-servicos {
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+  }
 
-    .page-title {
+  .page-title {
     margin-top: 10px;
     font-size: 25px;
   }

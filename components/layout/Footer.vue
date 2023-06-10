@@ -64,7 +64,7 @@ a {
 
 .footer p {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0
 }
 

@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-      <TopBarDefault class="topBar"/>
+      <TopBarDefault class="topBar" style="z-index: 999"/>
       <div style="min-height: 50vh" class="container-layout-default">
         <Nuxt/>
       </div>
