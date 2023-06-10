@@ -5,26 +5,24 @@
         <div class="col-md-4">
           <h5>Contato</h5>
           <ul>
-            <li>Endereço: Rua Exemplo, 123</li>
-            <li>Telefone: (11) 1234-5678</li>
-            <li>Email: contato@exemplo.com</li>
+            <li>Telefone: (47) 98453-5394</li>
+            <li>Email: oi@olivstudio.com.br</li>
           </ul>
         </div>
         <div class="col-md-4">
           <h5>Redes Sociais</h5>
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
             <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
           </ul>
         </div>
         <div class="col-md-4">
-          <a href="/sobre">Sobre Nós</a>
+          <img src="~/assets/img/logo-sem-fundo.png" class="miniatura" alt="olivstudio">
         </div>
       </div>
 
       <!-- Direitos autorais -->
-      <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+      <p>&copy; 2023 Oliv Studio. Todos os direitos reservados.</p>
 
     </div>
   </div>
@@ -37,7 +35,13 @@ export default {
 </script>
   
 <style scoped>
-/* Estilos do rodapé */
+.miniatura {
+width: 50%;
+}
+
+a {
+ color: white
+}
 .footer {
   background-color: #333;
   color: white;
