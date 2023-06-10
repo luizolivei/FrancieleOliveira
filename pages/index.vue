@@ -99,7 +99,15 @@ export default {
         infinite: true,
         speed: 600,
         centerMode: true,
-        autoplay: true
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       }
     }
   },
@@ -124,7 +132,7 @@ export default {
   font-size: 25px;
 }
 .carossel {
-  height: 280px;
+  height: 550px;
   width: 100%;
 }
 
